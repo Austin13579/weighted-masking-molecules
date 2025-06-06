@@ -209,12 +209,11 @@ def a_res(samples, m):
 def weight_sample(x,sample_size):
     res=[]
     mm=Counter(x[:,0].tolist())
-    pro_dict={}
+    atom_dict={}
     for kk in mm.keys():
-        pro_dict[kk]=round(np.log(0.9*(mm[kk]+1))/mm[kk], 4)
-    #print(pro_dict)
+        atom_dict[kk]=round(np.log(0.9*(mm[kk]+1))/mm[kk], 4)
     for i,atom in enumerate(x[:,0].tolist()):
-        res.append([i,pro_dict[atom]])
+        res.append([i,atom_dict[atom]])
     return a_res(res,sample_size)
 
 
