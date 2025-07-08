@@ -10,3 +10,18 @@ python pretrain_masking.py --output_model_file OUTPUT_MODEL_PATH
 ```
 python finetune.py --model_file INPUT_MODEL_PATH --dataset DOWNSTREAM_DATASET --filename OUTPUT_FILE_PATH
 ```
+## Citation
+
+If you find our work helpful to your research, please cite:
+```
+@article{lin2024rethinking,
+  title={Rethinking the Masking Strategy for Pretraining Molecular Graphs from a Data-Centric View},
+  author={Lin, Wei and Fung, Chi Chung Alan},
+  journal={ACS omega},
+  volume={9},
+  number={19},
+  pages={20832--20838},
+  year={2024},
+  publisher={ACS Publications}
+}
+```
